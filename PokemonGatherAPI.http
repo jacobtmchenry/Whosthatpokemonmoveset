@@ -1,0 +1,6 @@
+@PokemonGatherAPI_HostAddress = http://localhost:5198
+
+GET {{PokemonGatherAPI_HostAddress}}/pokemon/
+Accept: application/json
+
+###
