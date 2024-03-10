@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonGatherAPI", "PokemonGatherAPI.csproj", "{2484BD7F-2D5A-456F-95BC-C100CE982F56}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "whosthatpokemonmovesetui", "..\WhosThatPokemonMovesetUI\whosthatpokemonmovesetui.esproj", "{3641900B-B9D9-4FEC-B2DA-D0D6AD3C792E}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "WhoThatPokemonsMovesetUI", "..\WhosThatPokemonMovesetUI\WhoThatPokemonsMovesetUI.esproj", "{3641900B-B9D9-4FEC-B2DA-D0D6AD3C792E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
