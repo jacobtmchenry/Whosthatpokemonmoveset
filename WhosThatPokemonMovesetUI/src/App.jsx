@@ -2,34 +2,23 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-    const [pokemons, setpokemon] = useState();
+    const [pokemon, setpokemon] = useState();
+
+    console.log(pokemon);
 
     useEffect(() => {
-        populateWeatherData();
+        populatePokemonData();
     }, []);
 
-    const contents = pokemons === undefined
+    const contents = pokemon === undefined
         ? <p><em>Error Loading API call</em></p>
-        : <table className="table table-striped" aria-labelledby="tabelLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {pokemons.map(pokemon =>
-                    <tr key={pokemon.Number}>
-                        <td>{pokemon.Name}</td>
-                        <td>{pokemon.Number}</td>
-                        <td>{pokemon.Type1}</td>              
-                        <td>{pokemon.Type2}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
+        :
+        <div>
+            <div>{pokemon.name}</div>
+            <div>{pokemon.number}</div>
+            <div>{pokemon.type1}</div> 
+            <div>{pokemon.type2}</div>
+        </div>
 
     return (
         <div>
@@ -39,10 +28,12 @@ function App() {
         </div>
     );
     
-    async function populateWeatherData() {
-        const response = await fetch('GetPokemon');
+    async function populatePokemonData() {
+        const response = await fetch('https://localhost:32768/Pokemon')
         const data = await response.json();
         setpokemon(data);
+
+        const
     }
 }
 
