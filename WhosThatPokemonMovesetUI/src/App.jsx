@@ -3,8 +3,7 @@ import './App.css';
 
 function App() {
     const [pokemon, setpokemon] = useState();
-
-    console.log(pokemon);
+    console.log(pokemon)
 
     useEffect(() => {
         populatePokemonData();
@@ -18,6 +17,10 @@ function App() {
             <div>{pokemon.number}</div>
             <div>{pokemon.type1}</div> 
             <div>{pokemon.type2}</div>
+            <div>{pokemon.moves[0]}</div>
+            <div>{pokemon.moves[1]}</div>
+            <div>{pokemon.moves[2]}</div>
+            <div>{pokemon.moves[3]}</div>
         </div>
 
     return (
@@ -29,11 +32,9 @@ function App() {
     );
     
     async function populatePokemonData() {
-        const response = await fetch('https://localhost:32768/Pokemon')
+        const response = await fetch('https://localhost:32770/Pokemon')
         const data = await response.json();
         setpokemon(data);
-
-        const
     }
 }
 
