@@ -13,7 +13,6 @@ namespace PokemonGatherAPI.Models
 
         [JsonProperty("Type 2")]
         public string Type2 { get; set; }
-        //public Move[] moves {  get; set; }
-        public File PokemonPicture { get; set; }
+        public string[] Moves {  get; set; }
     }
 }
