@@ -17,3 +17,12 @@ th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+PokemonMove {
+    height: 30px;
+    width: 100px;
+}
+
+PokemonMovesBox {
+    padding-block: 25px
+}
